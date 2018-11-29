@@ -5,3 +5,7 @@ ruby '2.3.3'
 gem 'nokogiri'
 gem 'httparty'
 gem 'byebug'
+
+group :development, :test do
+  gem 'jasmine'
+end
