@@ -6,20 +6,16 @@
 
 
 let sumOfTwoLowestPositiveNumbers = (array) => {
-  let placeInArray = 0;
-  let sortedArray = array.sort();
   let sumArray = [];
+  let sortedArray = array.sort(function(a, b){return a - b});
   sortedArray.forEach((number)=> {
-    if(number < 0) {
-      placeInArray ++;
-    } else {
-      if(sumArray.length < 2) {
-        sumArray.push(number);
-      }
+    if((number > 0) && (sumArray.length < 2)){
+      sumArray.push(number);
     }
   });
   let sum = 0;
   sumArray.forEach((num) => {
     sum += num;
   });
-}
+  return sum;
+};
