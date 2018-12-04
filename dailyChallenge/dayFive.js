@@ -68,7 +68,7 @@ let dayFiveAnswer = (arrayOfStrings) => {
       threeCount ++;
       three = false;
     }
-  })
-  result = twoCount * threeCount
-  console.log(result)
-}
+  });
+  result = twoCount * threeCount;
+  console.log(result);
+};
