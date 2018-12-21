@@ -25,8 +25,8 @@
 let removeElement = (numbers, value) => {
   let count = 0;
   for (i = 0; i < numbers.length; i++) {
-    if(number[i] !== value) {
-      number[count] = number[i];
+    if(numbers[i] !== value) {
+      numbers[count] = numbers[i];
       count ++;
     }
   }
