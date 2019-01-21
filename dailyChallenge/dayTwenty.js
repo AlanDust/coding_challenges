@@ -178,37 +178,11 @@ let howManyCharacters = () => {
   let string = "It is important to us that all members of the team are able to utilize javascript in many ways! Whether it is a snippet running on a client's site or the page mappings we run on all clients pages. Javascript is the driving force to what Evergage does on a daily basis. We mostly rely on vanilla javascript and jQuery to ensure that the code we run is valid on all browsers. A great way to show us some of your javascript skills would be to help us with something now.";
   let downcaseString = string.toLowerCase();
   let characterArray = downcaseString.split("");
+  let letterCount = 0
   characterArray.forEach((letter) => {
-    characterCount[0][letter] ++;
-    characterCount[1][letter] ++;
-    characterCount[2][letter] ++;
-    characterCount[3][letter] ++;
-    characterCount[4][letter] ++;
-    characterCount[5][letter] ++;
-    characterCount[6][letter] ++;
-    characterCount[7][letter] ++;
-    characterCount[8][letter] ++;
-    characterCount[9][letter] ++;
-    characterCount[10][letter] ++;
-    characterCount[11][letter] ++;
-    characterCount[12][letter] ++;
-    characterCount[13][letter] ++;
-    characterCount[14][letter] ++;
-    characterCount[15][letter] ++;
-    characterCount[16][letter] ++;
-    characterCount[17][letter] ++;
-    characterCount[18][letter] ++;
-    characterCount[19][letter] ++;
-    characterCount[20][letter] ++;
-    characterCount[21][letter] ++;
-    characterCount[22][letter] ++;
-    characterCount[23][letter] ++;
-    characterCount[24][letter] ++;
-    characterCount[25][letter] ++;
-    characterCount[26][letter] ++;
-    characterCount[27][letter] ++;
-    characterCount[28][letter] ++;
-    characterCount[29][letter] ++;
+    for (var i=0; i<30; i++) {
+      characterCount[i][letter] ++;
+    }
   });
   return characterCount;
 };
